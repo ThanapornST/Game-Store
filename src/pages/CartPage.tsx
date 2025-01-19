@@ -5,6 +5,10 @@ import { Minus, Plus, Trash2 } from 'lucide-react';
 export const CartPage: React.FC = () => {
   const { items, removeFromCart, updateQuantity, total } = useCart();
 
+  const handleCheckout = () => {
+    window.open('https://store.steampowered.com/cart', '_blank', 'noopener,noreferrer');
+  };
+
   if (items.length === 0) {
     return (
       <div className="min-h-screen bg-gray-900 text-white p-8">
@@ -61,8 +65,11 @@ export const CartPage: React.FC = () => {
               <span className="text-lg">Total</span>
               <span className="text-2xl font-bold">${total.toFixed(2)}</span>
             </div>
-            <button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg transition-colors">
-              Proceed to Checkout
+            <button 
+              onClick={handleCheckout}
+              className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg transition-colors"
+            >
+              Proceed to Checkout on Steam
             </button>
           </div>
         </div>

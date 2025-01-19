@@ -95,3 +95,41 @@ export const freeGames: Game[] = [
     description: "The most highly-rated free game of all time!"
   }
 ];
+
+// Search-only games that won't be displayed in the main lists
+export const searchOnlyGames: Game[] = [
+  {
+    id: 1149460,
+    steamAppId: 1149460,
+    title: "ICARUS",
+    price: 600.00,
+    image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1149460/header.jpg",
+    developer: "RocketWerkz",
+    discount: -75,
+    originalPrice: 170.00,
+    rating: 4.2,
+    description: "A session-based PvE survival game for up to eight co-op players."
+  },
+  {
+    id: 2212330,
+    steamAppId: 2212330,
+    title: "LOCKDOWN Protocol",
+    price: 220.00,
+    image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2212330/header.jpg",
+    developer: "Deimos Games",
+    discount: -30,
+    originalPrice: 154.00,
+    rating: 4.0,
+    description: "A tactical first-person shooter where precision and strategy are key to survival."
+  },
+  {
+    id: 346110,
+    steamAppId: 346110,
+    title: "ARK: Survival Evolved",
+    price: 315.00,
+    image: "https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg",
+    developer: "Studio Wildcard",
+    rating: 4.4,
+    description: "Stranded on a mysterious prehistoric island, you must explore its vast biomes as you begin to hunt, harvest, craft tools, grow crops and build shelters to survive."
+  }
+];
