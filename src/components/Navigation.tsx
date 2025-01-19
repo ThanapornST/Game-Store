@@ -110,7 +110,6 @@ export const Navigation: React.FC = () => {
               )}
             </div>
           </div>
-          <User className="w-5 h-5 cursor-pointer" />
           <Menu className="md:hidden w-5 h-5 cursor-pointer" />
         </div>
       </div>
