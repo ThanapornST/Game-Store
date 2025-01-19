@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShoppingCart, User, Menu } from 'lucide-react';
+import { ShoppingCart, Menu } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useNavigate } from 'react-router-dom';
 import { featuredGames, specialOffers, freeGames, searchOnlyGames } from '../data/games';
